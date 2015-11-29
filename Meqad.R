@@ -330,7 +330,7 @@ summary.mqd=function(DADOS) {
 exc.out.mqd=function(x, method="interquartil") {
 #Exclui outliers de uma variável x, transformando em dado perdido
 #Método interquartil: outliers é o valor que estiver fora do intervalo definido pela mediana
-# mais ou menos k vezes o intervarlo interquartil. k é a o valor definido por Carling e é função 
+# mais ou menos k vezes o intervalo interquartil. k é a o valor definido por Carling e é função 
 # do tamanho da amostra. Referência: Carling, K. Resistant outlier rules and the non-Gaussian case. 
 # Computational Statistics & Data Analysis, 33(3), 249-258, 2000.
 
