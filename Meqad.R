@@ -495,7 +495,7 @@ cor.mqd=function(x,y, w=.1) {
 	skcor=round(scor$estimate, 3)
 	skpval=round(scor$p.value, 3)
 	scor$parameter
-	print(paste("Stipped correlation - valor:", skcor, "; p-valor:", skpval, "; pares eliminados:", n-scor$parameter))
+	print(paste("Skipped correlation - valor:", skcor, "; p-valor:", skpval, "; pares eliminados:", n-scor$parameter))
 	
 	#EXTRAINDO CORRELAÇÕES CONVENCIONAIS
 	cp=cor.test(x,y, method="pearson"); 
