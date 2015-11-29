@@ -189,20 +189,31 @@ winsoriza=function(x, w=0.1) {
 #-----------------------------------------------------------------------
 #MÉDIA WINSORIZADA
 media.w.mqd=function(x, w=0.1){
-y=winsoriza(x, w)
-mean(y)
+	y=winsoriza(x, w)
+	mean(y)
 }
 
 #-----------------------------------------------------------------------
-#VARIÂNCIA E DESVIO WINSORIZADOS
+#VARIÂNCIA E DESVIO APARADOS E WINSORIZADOS
+#Desvio aparado
+var.a.mqd=function(x, a=0.1){
+	y<-apara(x)
+	var(y)
+}
+
+desv.a.mqd=function(x, a=0.1){
+	y<-apara(x)
+	sd(y)
+}
+
 var.w.mqd=function(x, w=0.1){
-y=winsoriza(x, w)
-var(y)
+	y=winsoriza(x, w)
+	var(y)
 }
 
 desv.w.mqd=function(x, w=0.1){
-y=winsoriza(x, w)
-sd(y)
+	y=winsoriza(x, w)
+	sd(y)
 }
 
 #--------------------------------------------------------------------------------------
