@@ -1014,8 +1014,10 @@ gera.quantis.mqd=function(x,y, quantidade=11) {
 #--------------------------------------------------------------------------------------
 #DIAGPLOT PARA RESiDUOS
 #--------------------------------------------------------------------------------------
-diagplot.mqd<-function(modelo, com_out=TRUE, resp=y, preditores=cbind(x), modelagem="lm") {
-  #Definindo os residuos
+diagplot.mqd<-function(modelo, com_out=TRUE, preditores=cbind(x), modelagem="lm") {
+  	m = model.frame(modelo)[1]
+	y = m[,1]
+  	#Definindo os residuos
 	if(modelagem %in% c("lm", "rfit")) {
 	  	y_est=fitted(modelo)
 	  	residuo = residuals(modelo)
