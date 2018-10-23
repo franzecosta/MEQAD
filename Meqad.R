@@ -1,5 +1,6 @@
 #======================================================================================
 # Author: Franze Costa
+# Contributions: Jose Jorge L. Dias Jr.
 # Universidade Federal da Paraiba
 #======================================================================================
 #     INFORMAcoES PRELIMINARES
